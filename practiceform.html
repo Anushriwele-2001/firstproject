@@ -1,25 +1,135 @@
+Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCS</title>
+    <title>MAITHILI</title>
     <style>
-        h1{
-           text-align: center; text-decoration:rgb(248, 5, 5) solid;
+        h1 {
+            text-align: center;
+        }
+          
+        h2 {
+            text-align: center;
         }
 
-        h2{
-            text-align: center; text-decoration:dotted;
+        body {
+            position: relative; font-size:large;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://img.freepik.com/free-photo/large-modern-office-building_1127-3061.jpg?size=626&ext=jpg);
+            background-position: center;
+            background-size: cover;
+            filter: blur(05px);
+            z-index: -1; /* Place the blurred background behind the content */
         }
     </style>
+   
 </head>
 <body>
-    <h1>TCS</h1>
-    <h2> Interview Application Form</h2>
-    ac
-   <label for="first name">First Name </label>
-   <input type="text" name="" id="" placeholder="enter here">
+    
+    <h1 style="background-color: lavender;"> <img src="https://cdn3.vectorstock.com/i/1000x1000/45/97/mu-logo-monogram-with-emblem-shield-shape-design-vector-29624597.jpg" alt="photo" width="65" height="58"> Maithili University </h1>
+
+    <h2 style="background-color: rgb(215, 177, 233) ;"> Admission Application Form</h2>
+    
+    <fieldset style="border: 5; " >
+        <form action="file.java" method="get">
+        <p><Maithili University is a leading Educational institution based out of Greater Noida, Delhi NCR. A venture of the renowned Maithili Group of Institutions (MGI), The University has established itself as a high quality education provider with prime focus on holistic learning and imbibing competitive abilities in students.</p> <br> 
+<!-- image kaha pr dalna hai backg mai bro -->
+        <h3>Apply To Maithili</h3>
+        <ul>
+            <li>Register on to Maithili admission portal, fill up the following form with your basic details.
+            </li>
+            <li>On successful submission of application, the system will generate a unique ID & Password (Numeric).
+            </li>
+            <li>The unique identification number so generated will be your identity throughout the admission process.
+            </li>
+            <li>An auto generated email will be sent to your email id, containing the unique identification number and further process.
+            </li>
+        </ul>
+
+        <table style="border:solid black ; " >
+                            
+                            
+            <tr style="height: 40px;">
+                <td><label for="fname"><b>First Name: </b></td>
+                <td></label><input type="text" id="fname" name="fname" style="width: 350px;" required></td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label for="mname"><b>Middle Name: </b></label></td>
+                <td><input type="text" style="width: 350px;" id="mname" name="mname" required>
+                </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label for="lname"><b>Last Name: </b></label></td>
+                <td><input type="text" style="width: 350px;" id="lname" name="lname" required>
+                </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><b>Choose your gender:</b></td>
+                <td><input type="radio" name="gender" value="MALE" id="rd"> <label for="rd">MALE</label>
+                    <input type="radio"  name="gender" value="female" id="rd1"> <label for="rd1">FEMALE</label></td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><b>Last year passed in:</b> </td>
+                <td><input type="radio" name="Class" value="preprimary" id="preprimary"> <label for="preprimary">preprimary</label>   
+                    <input type="radio" name="Class" value="5" id="5"> <label for="5">5</label> 
+                    <input type="radio" name="Class" value="10" id="10"> <label for="10">10</label> 
+                    <input type="radio" name="Class" value="12" id="12"> <label for="12">12</label> 
+                    </td>
+            </tr>
+            <tr>
+                <td>&NonBreakingSpace;</td>
+                <td><input type="text" name="Class" id="other" placeholder="in case of other"><label for="other"></label></td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><b>Last School Name:</b> </td>
+                <td><input type="text" style="width: 350px;" name="lschool" id="lschool"><label for="lschool"></label></td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label for=""><b>Previous Board:</b></label></td>
+                <td >
+                    <select name="board" id="board">
+                        <option value="STATE BOARD">STATE BOARD</option>
+                        <option value="CBSE BOARD">CBSE BOARD</option>
+                        <option value="ICSE BOARD">ICSE BOARD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><b>Enter yoy D.O.B. :</b> </td>
+                <td><input type="date" style="width: 168px;" name="dob" id="dob"><label for="dob"></label></td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><b>Enter Your Email:</b> </td>
+                <td><input type="email" style="width: 350px;" placeholder="abc@gmail.com" name="email" id="email"><label for="email"></label></td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><b>Phone.No.</b> </td>
+                <td><input type="number" name="pno" id="pno"><label for="pno"></label></td>
+            </tr>
+            <tr style="height: 40px;">
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div><b>
+            <input type="submit" />
+            <input type="reset" />
+        </b>
+        </div>
+    </fieldset>
+    </form>
+    
     
 </body>
 </html>
