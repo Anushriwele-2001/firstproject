@@ -1,0 +1,46 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: linen;
+    color: black;
+}
+.container
+{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction:row;
+    gap: 5px;
+    justify-content: center;
+    align-content: center; */
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    /* gap: ; */
+    
+}
+.child
+{
+    height: 500px;
+    width: 500px;
+    color: white;
+    background-color: brown;
+    
+    
+}
+.child1
+{
+    /* flex-grow: 1px solid black;
+    color: white;
+    background-color: brown;
+    width: 50px; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid grid-row-end: 3;
+}
