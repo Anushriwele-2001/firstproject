@@ -1,32 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Basics</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Jost:ital,wght@1,300&family=Lato:ital,wght@1,300&family=Nunito:wght@600&display=swap">
-</head>
-<body>
-    <h1>Portfolio</h1>
-    <header>
-        <ul class="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </header>
-    <section id="data">
-        <img src="data:image/jpeg;base64,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" alt="">
-        <div class="firstDiv"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam et dolorum deleniti voluptatem ut asperiores reiciendis temporibus incidunt numquam omnis, ab maxime. Aspernatur dolore quam placeat sed rem deleniti quasi?</p></div>
-        <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero similique natus, saepe soluta doloremque odit sit quos sequi excepturi illo amet aspernatur ab nisi itaque dolore neque modi assumenda beatae.</p></div>
-        <article><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem, tempora ratione possimus minus temporibus natus neque ipsam ad rem itaque tenetur aut odit deleniti nesciunt, exercitationem esse autem aperiam.</p></article>
-        <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores obcaecati fuga animi quibusdam quis. Necessitatibus, fuga hic deleniti, recusandae nostrum enim cupiditate accusantium similique accusamus inventore ipsam iste dolore illo.</p></div>
-    </section>
-    <!-- <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt in dignissimos nihil nulla omnis fugiat earum vel sed assumenda architecto facere natus nemo, exercitationem numquam sint eveniet debitis! Omnis, distinctio.</div> -->
-    
+  <head>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYIavcDE_2Xf8tdPMoYKzMB-heDeIO9eUz1w&usqp=CAU" type="image/x-icon">
+    <title>w3c project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        table,th,td
+        {
+            border:2px solid black
+        }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.w3.org/" target="_blank">
+      <img
+        src="https://www.w3.org/assets/logos/w3c/w3c-no-bars.svg"
+        alt=""
+      /><br />
+      <a href="#d1">go down</a> <br />
+      
+      <a href="mailto:anushriwele2001@gmail.com"> <i class="fa-solid fa-envelope"></i>mail me</a> <br />
+      
+      <a href="tel:8530778433"> <i class="fa-solid fa-phone"></i>contact me</a>
+    </a>
+    <br />
+    <h1>A Little History of the World Wide Web</h1>
+    <p>
+      <em>
+        See also
+        <a href="https://www.w3.org/2004/Talks/w3c10-HowItAllStarted/"
+          >How It All Started</a
+        >
+        presentation materials from the
+        <a href="https://www.w3.org/2004/09/W3C10.html"
+          >W3C 10th Anniversary Celebration</a
+        >
+        and <a href="https://www.w3.org/History.html#refs">other references.</a>
+      </em>
+    </p>
+    <p>from 1945 to 1995</p>
+    <div class="mydiv" id="d1">
+      <h2><strong>1945</strong></h2>
+      <p>
+        Vannevar Bush writes
+        <a
+          href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/"
+          >an article</a
+        >
+        in
+        <a href="https://www.theatlantic.com/world/">Atlantic Monthly</a> about
+        a photo-electrical-mechanical device called a Memex, for memory
+        extension, which could make and follow links between documents on
+        microfiche
+      </p>
+      <h3><strong>1960s</strong></h3>
+      <p>
+        Doug Engelbart prototypes an "oNLine System" (NLS) which does hypertext
+        browsing editing, email, and so on. He invents the mouse for this
+        purpose. See the
+        <a href="http://www.bootstrap.org/library.html"
+          >Bootstrap Institute library.</a
+        >
+      </p>
+      <p>
+        Ted Nelson coins the word Hypertext in A File Structure for the Complex,
+        the Changing, and the Indeterminate. 20th National Conference, New York,
+        <a href="https://www.acm.org/">Association for Computing Machinery,</a>
+        1965. See also: Literary Machines. Note: There used to be a link here to
+        "Hypertext and Hypermedia: A Selected Bibliography" by Terence Harpold,
+        but the site hosting the resource did not maintain the link.
+      </p>
+      <p>
+        Andy van Dam and others build the Hypertext Editing System and FRESS in
+        1967.
+      </p>
+      <h4><strong>1980</strong></h4>
+      <p>
+        While consulting for CERN June-December of 1980, Tim Berners-Lee writes
+        a notebook program, "Enquire-Within-Upon-Everything", which allows links
+        to be made between arbitrary nodes. Each node had a title, a type, and a
+        list of bidirectional typed links. "ENQUIRE" ran on Norsk Data machines
+        under SINTRAN-III. See:
+        <a href="https://www.w3.org/History/1980/Enquire/scaled/"
+          >Enquire user manual as scanned images</a
+        >
+        or as HTML page
+        <a href="https://www.w3.org/History/1980/Enquire/manual/">(alt).</a>
+      </p>
+    </div>
+    <hr />
+    <div>
+      <h5><strong>1989</strong></h5>
+      <dt>March</dt>
+      <dd>
+        <a href="https://www.w3.org/History/1989/proposal.html"
+          >"Information Management: A Proposal"</a
+        >written by
+        <a href="https://www.w3.org/People.html#BernersLee">Tim BL</a> and
+        circulated for comments at <a href="https://home.cern/">CERN</a> (TBL).
+        Paper "HyperText and CERN" produced as background (<a
+          href="https://www.w3.org/Administration/HTandCERN.txt"
+          >text</a
+        >
+        or <a href="">WriteNow</a> format).
+      </dd>
+    </div>
+    <hr />
+    <div>
+      <h6>1990</h6>
+
+      <dt>May</dt>
+      <dd>Same proposal recirculated</dd>
+      <dt>September</dt>
+      <dd>
+        Mike Sendall, Tim's boss, Oks the purchase of a NeXT cube, and allows
+        Tim to go ahead and write a global hypertext system.
+      </dd>
+      <dt>October</dt>
+      <dd>
+        Tim starts work on a hypertext GUI browser+editor using the NeXTStep
+        development environment. He makes up "WorldWideWeb" as a name for the
+        program. (See the first browser screenshot) "World Wide Web" as a name
+        for the project (over Information Mesh, Mine of Information, and
+        Information Mine).Project original proposal reformulated with
+        encouragement from CN and ECP divisional management. Robert Cailliau
+        (ECP) joins and is co-author of new version.
+      </dd>
+      <dt>November</dt>
+      <dd>
+        Initial WorldWideWeb program development continues on the NeXT (TBL) .
+        This was a "what you see is what you get" (wysiwyg) browser/editor with
+        direct inline creation of links. The first web server was
+        nxoc01.cern.ch, later called info.cern.ch, and the first web page
+        http://nxoc01.cern.ch/hypertext/WWW/TheProject.html Unfortunately CERN
+        no longer supports the historical site. Note from this era too, the
+        least recently modified web page we know of, last changed Tue, 13 Nov
+        1990 15:17:00 GMT (though the URI changed.)
+      </dd>
+      <dt>November</dt>
+      <dd>
+        Technical Student Nicola Pellow (CN) joins and starts work on the
+        line-mode browser. Bernd Pollermann (CN) helps get interface to CERNVM
+        "FIND" index running. TBL gives a colloquium on hypertext in general.
+      </dd>
+      <dt>Christmas</dt>
+      <dd>
+        Line mode browser and WorldWideWeb browser/editor demonstrable. Acces is
+        possible to hypertext files, CERNVM "FIND", and Internet news articles.
+      </dd>
+      <dd>
+        <img src="slide.gif" alt="" height="200px" width="200px" center />
+      </dd>
+    </div>
+    <hr />
+    <div>
+      <em><a href="">Dan Connolly,</a>2000</em><br />
+      <em><a href="">Webmaster</a></em
+      ><br />
+      <em
+        >feedback to
+        <a href="mailto:anushriwele2001@gmail.com">www-talk (archive)</a> and/or
+        <a href=""> site-comments (archive)</a>, please</em
+      ><br />
+      <small><em>$Revision: 1.61 $ of $Date: 2021/08/01 16:53:33 $</em></small><br />
+      <em>created circa 1995 by<a href="">Robert Cailliau</a></em>
+    </div>
+    <table>
+        <tr>
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 2</th>
+        </tr>
+        <tr>
+            <td rowspan="2">row 1 cell 1</td>
+            <td>row 1 cell 2</td>
+            <td>row 1 cell 3</td>
+        </tr>
+        <tr>
+            <td >row 2 cell 2</td>
+            <td>row 2 cell 3</td>
+            
+        </tr>
+        <tr>
+            <td colspan="3">row 3 cell 1</td>
+        </tr>
+    </table>
 </body>
 </html>
