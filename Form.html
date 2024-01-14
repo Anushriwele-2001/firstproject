@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Form</h1>
+    <form action="file.java" method="post">
+        <p> Filing all categories are mandatory!! </p>
+        <div>
+         <label for="fname">First Name: </label>
+         <input type="text" id="fname" placeholder="Enter First Name" name="fname" required> <br> <br>
+        </div>
+        <br>
+        <div>
+         <label for="lname">Last Nmae : </label>
+         <input type="text" id="lname" placeholder="Enter Last Name" name="lname"required> <br> <br>
+        </div>
+        <br>
+        <div>
+         <label for="mail">Email:</label>
+          <input type="email" id="mail" placeholder="Enter Email" name="email"required> <br> <br>
+        </div>
+        <br>
+        <div>
+         <label for="pwd">Password:</label >
+          <input type="password" id="pwd" name="pwd"required> <br> <br>
+        </div>
+        <br>
+        <div>
+            <label for="age">Age:</label>
+             <input type="number" id="age" name="age" placeholder="Enter Age"required min="18" max="30"> <br> <br>
+           </div>
+           <br>
+           <div>
+            <label for="dob">DOB:</label>
+             <input type="datetime" id="dob" name="dob"required> <br> <br>
+           </div>
+           <br>
+           <div>
+            <label for="file">Upload File:</label>
+             <input type="file" id="file" name="file"> <br> <br>
+           </div>
+           <br>
+               <!-- radiobuttons -->
+        <div>
+           <p>Choose gender:</p>
+           <input type="radio" name="rd" id="rd" value="male"> 
+           <label for="rd">Male</label>
+           <input type="radio" name="rd" id="rd1" value="female">
+            <label for="rd1">Female</label><br>
+        </div><br>
+             <!-- checkers -->
+        <div>
+            <input type="checkbox" name="skills" id="s1"> 
+            <label for="s1">HTML</label>
+            <input type="checkbox" name="skills" id="s2"> 
+            <label for="s2">CSS</label>
+            <input type="checkbox" name="skills" id="s3"> 
+            <label for="s3">JS</label>
+        </div>
+        <br>
+        <div>
+                <!-- dropdowns for single selections -->
+                <label for="">Choose Gender</label>
+                <select name="gender" id="">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                    <option value="o">other</option> 
+                </select>
+
+                <!--for multi selections  --> 
+                <p>Choose your Fav. Grocery!!</p>               
+                <select name="grocery" id="">
+                    <optgroup label="Fruits">       
+                    <option value="Apple">Apple</option>
+                    <option value="orange">orange</option>
+                    <option value="Banana">Banana</option>
+                </optgroup>
+                <optgroup label="Vegetable">
+                    <option value="Cabbage">Cabbage</option>
+                    <option value="Onion">Onion</option>
+                    <option value="potato">potato</option>
+                </optgroup>
+                </select>
+            </div>
+
+        <input type="submit">  <input type="reset">
+
+
+
+    </form>
+
+    
+</body>
+</html>
